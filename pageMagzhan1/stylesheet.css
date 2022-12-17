@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu-bold-pro.woff") format("woff");/* Modern Browsers */
+      
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  /* overflow-x: hidden; */
+  width: 100%;
+  font-family: 'Apercu', sans-serif;
+  margin: 0;
+  /* background-color: aquamarine; */
+}
+
+.justtext{
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.flex{
+  display: flex;
+}
+.stairsBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 500px;
+  background-image: url('./img/stairspic.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.headerText{
+  font-size: 45px ;
+  font-weight: normal;
+  font-weight: 600 ;
+  color: #10162F ;
+  text-align: center ;
+}
+.regButtonDiv{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(246,245,250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regButton{
+  cursor: pointer;
+  width: 190px;
+  height: 40px;
+  border: none;
+  font-size: 12px;
+  color: rgb(241, 237, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58,16,229);
+}
+.bigDiv{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.smallerDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+.smallerDivOne{
+  padding-bottom: 65px;
+  padding-top: 45px;
+}
+.UpcomingMeetupsTextDiv{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+.searchInput{
+  height: 60px;
+  /* margin-bottom: 50px; */
+  border: none;
+  border-bottom: 1px solid #c1c7d0;
+  /* padding: 20px 15px; */
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  word-spacing: 6px;
+  font-size: 18px;
+}
