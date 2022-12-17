@@ -1,19 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
-
-
 *{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  list-style-type: none;;
+}
+body {
+  background-color: antiquewhite;
+  
+  font-family: "Lato", sans-serif;
+  color: black
+  
 }
 
-body {
-  
-  background-color: aquamarine;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-ul li {
-  padding: 0.4rem
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: antiquewhite;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+#slide-panel,#slide-panel2{
+  display: none;
 }
 #plus,#plus2{
   vertical-align: middle;
@@ -24,73 +75,42 @@ ul li {
   transform: rotate(45deg);
 }
 
-.root{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
- 
-}
-
-.lang{
-  padding-left: 2rem;
-}
-
-.cont{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.lang{
-  height: 100vh;
-  width: 15%;
-  background-color: antiquewhite;
-}
-
 #click,#click2{
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: left;
+  text-align: center;;
 }
-#slide-panel,#slide-panel2{
- 
-  display: none;
+#slide-panel ul li,#slide-panel2 ul li{
+  padding: 0.5rem 0 0.5rem 0;
+  
 }
 .inf{
-  padding-top: 0.3rem;
-}
-.inf p{
-  padding-top: 0.2rem;
-}
-
-.main{
-  background-color: beige;
-  
-  width: 85%;
-}
-
-
-.explore{
-  width: 100%;
   text-align: center;
 }
 
+.btn1,.btn2{
+  padding: 0.1rem 0 0.1rem 0;
+}
+
+
+
+
+
+
 
 .item-wrap{
-  width: 95%  ;
+  border: 1px solid black;
+  
+  border-image: linear-gradient(45deg,red,blue) 10;
+  
   display: flex;
-  justify-content: center;;
+  justify-content: center;
+  height: 5rem;
 }
 
-.spans{
-  display: flex;
-  align-items: center;
-  padding: 0 2rem 0 2rem;
-}
+
 .wrapper{
-cursor: pointer;
+  cursor: pointer;
   width: 100%;
-  height: 12rem;
+  height: 10rem;
   display: flex;
   
   overflow-x: auto;
@@ -103,7 +123,6 @@ svg{
 
 .child{
   align-self: flex-end;
-  
   text-align: center;
   padding:0 1rem 0 1rem;
   width: 9rem;
@@ -120,7 +139,7 @@ svg{
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-20px); }
+  50%  { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
 
@@ -131,7 +150,25 @@ svg{
 
 
 
+.career{
+  padding: 1rem;
+}
+
+.top-prof{
+  
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50vh;
+  background-color: #444;
+  
+}
 
 
 
 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
