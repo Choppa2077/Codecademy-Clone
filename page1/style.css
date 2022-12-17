@@ -70,13 +70,22 @@ ul li {
 }
 
 
-
-.wrapper{
-
-  width: 70%;
-  height: 15rem;
-  border: 1px solid black;
+.item-wrap{
   display: flex;
+  justify-content: center;;
+}
+
+.spans{
+  display: flex;
+  align-items: center;
+  padding: 0 3rem 0 3rem;
+}
+.wrapper{
+cursor: pointer;
+  width: 70%;
+  height: 12rem;
+  display: flex;
+  
   overflow-x: auto;
 }
 
@@ -84,8 +93,9 @@ ul li {
 
 .child{
   align-self: flex-end;
+  
   text-align: center;
-  padding:0 5rem 0 5rem;
+  padding:0 2rem 0 2rem;
   width: 10rem;
   height: 8rem;
   text-align: center;
@@ -100,7 +110,7 @@ ul li {
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-50px); }
+  50%  { transform: translateY(-20px); }
   100% { transform: translateY(0); }
 }
 
