@@ -3,7 +3,8 @@
 }
 body {
   background-color: antiquewhite;
-  
+  margin: 0;
+  padding: 0;
   font-family: "Lato", sans-serif;
   color: black
   
@@ -155,15 +156,126 @@ svg{
 }
 
 .top-prof{
-  
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+  background-color: #f1f1f1;
+  width: 30%;
   height: 50vh;
-  background-color: #444;
-  
+}
+.prof-item img{
+  width: 75%;
+  height: 75%;
 }
 
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 18.5rem;
+  height: 18.5rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  
+  color: black;
+}
+
+.flip-card-back {
+  background-color: slateblue;
+  color: black;;
+  transform: rotateY(180deg);
+}
+
+
+.card-info{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid{
+  display: grid;
+  
+  grid-gap: 1rem;
+}
+.items-cat{
+  width: 100%;
+}
+
+.col{
+  border-radius: 2px;
+  border: 1px solid black;
+  background-color: white !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+ 
+  
+}
+.col:hover{
+  
+  -webkit-box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
+-moz-box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
+box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
+transition: all 1s;
+}
+.type-c{
+  margin: 0;
+  padding: 0;
+  background-color: #e9fdc5 ;
+}
+
+
+.for-type{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+button{
+  background-color: aliceblue;
+  border:none;
+  font-size: medium;
+}
 
 
 
@@ -172,3 +284,23 @@ svg{
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+
+
+
+@media (min-width:768px) {
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }  
+}  
+
+@media (min-width:960px) {
+  .grid{
+    grid-template-columns: repeat(3,1fr);
+  }  
+}  
+
+@media (min-width:1200px) {
+  .grid{
+    grid-template-columns: repeat(4,1fr);
+  }  
+}  
