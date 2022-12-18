@@ -21,7 +21,9 @@
 
 
 
-  <section class="row2">
+  </div >
+
+  <section class="row2" style="z-index: 999999;">
     <div class="pricing">
       <div class="price-card">
         <div class="price-img">
@@ -38,8 +40,53 @@
         <div class="price-num">
           <p><sub>$</sub>15.99<sub>/month</sub></p>
         </div>
-        <button class="price-btn">Buy Now</button>
+        <button class="price-btn" id="myBtn">Buy Now</button>
+        
+
       </div>
+    </div>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>You can pay with VISA/MasterCard or pay with Kaspi QR</h2>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post">
+
+            <h1>Payment form</h1>
+          
+            <section>
+              <label>Card number</label>
+              <input>
+            </section>
+          
+            <section>
+              <label>Name on card</label>
+              <input>
+            </section>
+          
+            <section id="cc-exp-csc">
+              <div>
+                <label>Expiry date</label>
+                <input>
+              </div>
+              <div>
+                <label>Security code</label>
+                <input>
+                <div class="explanation">Last 3 digits on back of card</div>
+              </div>
+            </section>
+          
+            <button id="complete-payment">Complete payment</button>
+          
+          </form>
+        </div>
+        
+      </div>
+    
     </div>
 
 
@@ -58,8 +105,24 @@
         <div class="price-num">
           <p><sub>$</sub>25.99<sub>/month</sub></p>
         </div>
-        <button class="price-btn">Buy Now</button>
+        <button class="price-btn" id="myBtn">Buy Now</button>
       </div>
+      <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        
+      </div>
+    
+    </div>
     </div>
 
 
@@ -78,10 +141,27 @@
         <div class="price-num">
           <p><sub>$</sub>45.99<sub>/month</sub></p>
         </div>
-        <button class="price-btn">Buy Now</button>
+        <button class="price-btn" id="myBtn">Buy Now</button>
       </div>
     </div>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        
+      </div>
+    
+    </div>
   </section>
+
 
 
 
@@ -97,6 +177,270 @@
 
 
 
+
+<section class="table-plane">
+  <div class="root-wrap">
+  <div class="wrap1">
+    <article  class="plan" id="plan1">
+      <h4 class="active" id="planclick1" style="cursor: pointer;">Start Learning <i id="planarr1" class='bx bxs-chevron-down' ></i></h4>
+      <div style="display: none;" id="hide">
+      <div style="padding-top: 1rem;">
+        <h5>Basic access to free courses</h5>
+        <div class="tarif">
+          <div class="ch-t">
+            <div>Basic</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Pro</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Premium</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 1rem;">
+        <h5>Learning resources</h5>
+        <div class="tarif">
+          <div class="ch-t">
+            <div>Basic</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Pro</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Premium</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 1rem;">
+        <h5>Practice on our mobile app</h5>
+        <div class="tarif">
+          <div class="ch-t">
+            <div>Basic</div>
+            <div>Limited</div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Pro</div>
+            <div>Unlimited</div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Premium</div>
+            <div>Unlimited</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 1rem;">
+        <h5>Personalized practice</h5>
+        <div class="tarif">
+          <div class="ch-t">
+            <div>Basic</div>
+            <div><i class='bx bxs-minus-circle' ></i></i></div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Pro</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+          <hr>
+          <div class="ch-t">
+            <div>Premium</div>
+            <div><i class='bx bx-check-circle' ></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </article>
+  </div>
+
+    <div class="wrap1"> 
+      <article  class="plan" id="plan2">
+        <h4 class="active" id="planclick2" style="cursor: pointer;">Build your skills <i id="planarr2" class='bx bxs-chevron-down' ></i></h4>
+        <div style="display: none;" id="hide">
+        <div style="padding-top: 1rem;">
+          <h5>Skill paths
+          </h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-top: 1rem;">
+          <h5>Certificates of completion
+
+          </h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-top: 1rem;">
+          <h5>Real-world projects
+
+          </h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </article>
+    </div>
+
+    <div class="wrap1">
+      <article  class="plan" id="plan3">
+        <h4 class="active" id="planclick3" style="cursor: pointer;">Land a job <i id="planarr3" class='bx bxs-chevron-down' ></i></h4>
+        <div style="display: none;" id="hide">
+        <div style="padding-top: 1rem;">
+          <h5>Career paths</h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="padding-top: 1rem;">
+          <h5>Career paths group</h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-top: 1rem;">
+          <h5 >Technical interview prep</h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </article>
+    </div>
+
+    <div class="wrap1">
+      <article  class="plan" id="plan4">
+        <h4 class="active" id="planclick4" style="cursor: pointer;">Additional features <i id="planarr4" class='bx bxs-chevron-down' ></i></h4>
+        <div style="display: none;" id="hide">
+        <div style="padding-top: 1rem;">
+          <h5>Basic access to free courses</h5>
+          <div class="tarif">
+            <div class="ch-t">
+              <div>Basic</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Pro</div>
+              <div><i class='bx bxs-minus-circle' ></i></div>
+            </div>
+            <hr>
+            <div class="ch-t">
+              <div>Premium</div>
+              <div><i class='bx bx-check-circle' ></i></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- 
   <section class="upgrade">
     <div>
       <div>
@@ -132,7 +476,7 @@
       </div>
     </div>
     
-  </section>
+  </section> -->
 
 
   
@@ -233,7 +577,7 @@
 
 
 
-  
+ 
 <section>
 
   <footer>
@@ -296,17 +640,16 @@
 
       </div>
       <div class="download">
-        
-        
+       
       </div>
-      <div class="course-div">
-        <h3 class="course">Course Catalog</h3></div>
+      
     </section>
     
     <hr>
    
     <section class="container2">
-
+      <div class="course-div">
+        <h3 class="course" style="padding-bottom:1rem ;">Course Catalog</h3></div>
     
       
       <div class="lang">
@@ -343,7 +686,7 @@
         </div>
 
 
-        <p class="micro info">SDU 2022</p>
+        
       </div>
       
       
@@ -354,6 +697,9 @@
   
   
   </footer>
+  <div>
+    SDU 2022 
+  </div>
 </section>
 
 </body>

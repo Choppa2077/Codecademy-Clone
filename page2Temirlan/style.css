@@ -290,9 +290,6 @@ padding: 3vh;
  justify-content: space-around;
 }
 
-.upgrade>p{
-}
-
 
 
 
@@ -362,87 +359,31 @@ align-items: center;
   transform: rotate(180deg);
 }
 
-
-
-
-
-
-@media screen and (min-width:800px) {
-
-
-*{
-  list-style:none;
-  text-align: center;;
+#planarr1,#planarr3,#planarr2,#planarr4{
+  vertical-align: middle;
+  transition: all 0.5s linear;
 }
 
-
-footer{
- background-color: antiquewhite; 
-  padding-top:2rem ;
-  
-}
-.tophr{
-  border: 0.5px solid black;;
-  background-color: black;
-  
-   
-}
-.container1{
-  width: 49%;
-  display: grid;
-  row-gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.mob-app li img {
-  width: 100%;
-  height: 100%;
-
-  
-}
-
-.download{
-  margin-left: 3rem;
-  display: flex;
-  
+.bxs-chevron-down.transform {
+  transform: rotate(180deg);
 }
 
 
 
-.mob-app{
-  display: flex;
 
-}
-.container2{
-  width: 49%;
-  display: flex;
-  justify-content: space-around;
-}
 
-.course-div{
-  display: none;
-}
-
-footer{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.micro-info,.br{
-  display: none;
-
-}
-
-}
 
 
 
 .root-tp{
+  z-index: 9999;
   display: flex;
   justify-content: center;
   padding: 1rem;
 }
 .team-plans{
+  
+  z-index: 9999;
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -450,6 +391,8 @@ footer{
 }
 .team-plans div{ 
   padding: 1rem;
+  
+  z-index: 9999;
 }
 
 @media (max-width:600px) {
@@ -461,4 +404,303 @@ footer{
   .team-plans div{
     padding: 1rem;
   }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:800px) {
+  
+
+  *{
+    list-style:none;
+    text-align: center;;
+  }
+  
+  
+  footer{
+   background-color: antiquewhite; 
+    padding-top:2rem ;
+    
+  }
+  .tophr{
+    border: 0.5px solid black;;
+    background-color: black;
+    
+     
+  }
+  .container1{
+    width: 49%;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .mob-app li img {
+    width: 100%;
+    height: 100%;
+  
+    
+  }
+  
+  .download{
+    margin-left: 3rem;
+    display: flex;
+    
+  }
+  
+  
+  
+  .mob-app{
+    display: flex;
+  
+  }
+  .container2{
+    width: 49%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .course-div{
+    display: none;
+  }
+  
+  footer{
+    background-color: rgb(255, 240, 229);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .micro-info,.br{
+    display: none;
+  
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width:800px){
+   
+    
+    *{
+      list-style:none;
+      text-align: center;
+      
+    }
+    hr{
+      background-color: black;
+      border:solid 0.0001em black;;
+    }
+  
+    .cc{
+      display: none;
+    }
+  .container1{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
+    background-color: rgb(255, 240, 229);
+  }
+  
+  .section-1{
+    text-align: center;
+  }
+  ul li {
+    font-size: 0.9rem;
+    margin: 0.4rem 0 ;
+  }
+  
+  
+ 
+  .resources , .title,.support,.community,.iplans,.eplans,.mobile{
+      line-height: 1.5;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+  
+  .download{
+      grid-column: 1/3;
+  }
+  .download  li {
+    margin: 0.5rem 0 0.5rem 0;
+      display: inline-block;
+      width: 49%;
+      
+  }
+  .download ul li img{
+    margin-left:1.5rem ;
+    width: 40%;
+    height: 35%;
+  }
+  
+  
+  
+ 
+  .lang h4{
+    text-align:center;
+  }
+  
+  .lang ul li{
+    display:block;float:left;width:49%;
+  }
+  
+  
+  .subjects h4{
+    text-align:center;
+  }
+  
+  .subjects ul li{
+    display:block;float:left;width:49%;
+  }
+  
+  .subjects p{
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  
+  .legal-cont p{
+    margin-top: 5rem;
+    
+    text-align: center;
+  }
+  }
+  
+
+
+hr{
+  color: black;
+  background-color: black;
+  box-shadow: none;
+  border-color: black;
+  size: 1px;
+  font-size: 1px;
+}
+
+
+  .table-plane{
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  .root-wrap{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .wrap1{
+    padding: 1rem;
+    border: 1px solid black;
+  }
+  
+
+  .ch-t{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media(max-width:600px) {
+    .root-wrap{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 5px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: antiquewhite;
+  color: white;
+  border-radius: 5px;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }
