@@ -177,3 +177,258 @@ body{
 
 
 
+
+
+
+.row1{
+  padding-top:2rem ;
+  display: flex;
+  justify-content: center;
+  font-size: 3vh
+  
+}
+
+.row2{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+padding: 2rem;
+z-index: 33;
+
+}
+.price-card{
+flex-direction: columns;
+align-items: center;
+justify-content: center;
+width: 320px;
+height: auto;
+background-color: white;
+border-radius: 10px;
+box-shadow:0 3px 12px rgba(0 ,0,0, 0.25),0 5px 5px rgba(0, 0, 0, 0.22);
+padding: 2rem;
+margin: 1rem;
+transition: all 0.2s ease-in;
+}
+.price-info{
+text-align: center;
+}
+.price-card:hover{
+transform: scale(1.1);
+}
+.price-card:hover .price-img>h2{
+transform: scale(1.1);
+color: chocolate;
+letter-spacing: 2;
+
+}
+
+.price-img > img{
+text-align: center;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.price-info > p{
+padding: 0.4rem 1.2rem;
+font-size: 0.7rem;
+border-bottom: 1px solid rgb(58,16,229);;;
+
+}
+.price-num{
+display: flex;
+align-items: flex-start;
+margin: 1rem;
+}
+.price-num>p{
+font-size: 3rem;
+font-weight: 900;
+
+}
+
+.price-num >p > sup,
+.price-num >p > sub{
+font-size: 1rem;
+}
+
+.price-btn{
+  padding: 0.3rem 2rem;
+  border: 2px solid black;;
+  background-color: white;;
+  
+  border-radius:35px ;
+  cursor: pointer;
+  transition:all 20ms ease-in;
+
+
+}
+.price-btn:hover{
+
+background-color: rgb(58,16,229);
+
+
+
+}
+
+
+
+
+.fq{
+text-align: center;
+padding: 3vh;
+
+}
+
+
+
+.upgrade{
+  font-size: 2vh;
+  width: 100%;
+ padding: 0 20% 0 20%;
+ display: flex;
+ justify-content: space-around;
+}
+
+.upgrade>p{
+}
+
+
+
+
+
+.question{
+display: flex;
+justify-content: center;
+padding: 0 10vh 0 10vh;
+}
+.box{
+padding: 1rem;
+}
+.active{
+text-align: center;
+}
+
+
+
+
+
+
+.company{
+background-color: rgb(16, 22, 47);
+display: flex;
+justify-content: space-evenly;
+}
+
+.item-grid{
+display: grid;
+grid-gap: 1rem;
+}
+.col{
+padding: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+@media (min-width:768px) {
+.item-gridd{
+  grid-template-columns: repeat(1,1fr);
+}  
+}  
+
+@media (min-width:800px) {
+.item-grid{
+  grid-template-columns: repeat(2,1fr);
+}  
+}  
+
+@media (min-width:1200px) {
+.item-grid{
+  grid-template-columns: repeat(4,1fr);
+}  
+}  
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:800px) {
+
+
+*{
+  list-style:none;
+  text-align: center;;
+}
+
+
+footer{
+ background-color: antiquewhite; 
+  padding-top:2rem ;
+  
+}
+.tophr{
+  border: 0.5px solid black;;
+  background-color: black;
+  
+   
+}
+.container1{
+  width: 49%;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mob-app li img {
+  width: 100%;
+  height: 100%;
+
+  
+}
+
+.download{
+  margin-left: 3rem;
+  display: flex;
+  
+}
+
+
+
+.mob-app{
+  display: flex;
+
+}
+.container2{
+  width: 49%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-div{
+  display: none;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.micro-info,.br{
+  display: none;
+
+}
+
+}
+
+
+
+
+
