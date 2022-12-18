@@ -54,35 +54,31 @@
           <h2>You can pay with VISA/MasterCard or pay with Kaspi QR</h2>
         </div>
         <div class="modal-body">
-          <form action="#" method="post">
+          <form action="#" method="post" class="frompay">
 
-            <h1>Payment form</h1>
+            <legend><h1>Payment form</h1></legend>  
           
-            <section>
-              <label>Card number</label>
-              <input>
-            </section>
+            
+        <hr>
+        <p>
+            Card Type: <select name="card_type" id="card_type"required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="payal">MasterCard</option>
+            </select>
+        
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number"required placeholder="777 777 777 777"></p>
+        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"required dd-mm-yyyy></p>
+        <p style="padding-bottom:1rem ;">CVV <input style="padding-bottom:1rem ;" type="password" name="cvv" id="cvv" required placeholder="123"></p>
+        <input  type="button" value="Pay Now">
           
-            <section>
-              <label>Name on card</label>
-              <input>
-            </section>
-          
-            <section id="cc-exp-csc">
-              <div>
-                <label>Expiry date</label>
-                <input>
-              </div>
-              <div>
-                <label>Security code</label>
-                <input>
-                <div class="explanation">Last 3 digits on back of card</div>
-              </div>
-            </section>
-          
-            <button id="complete-payment">Complete payment</button>
-          
+            
           </form>
+
+          <br><h5>OR</h5><br>
+
+          <img src="https://images.satu.kz/183226187_modul-oplaty-kaspi.jpg" alt="" width="200vw" height="200vh">
         </div>
         
       </div>
@@ -105,7 +101,7 @@
         <div class="price-num">
           <p><sub>$</sub>25.99<sub>/month</sub></p>
         </div>
-        <button class="price-btn" id="myBtn">Buy Now</button>
+        <button class="price-btn" id="myBtn2">Buy Now</button>
       </div>
       <div id="myModal" class="modal">
 
@@ -141,25 +137,49 @@
         <div class="price-num">
           <p><sub>$</sub>45.99<sub>/month</sub></p>
         </div>
-        <button class="price-btn" id="myBtn">Buy Now</button>
+        <button class="price-btn" id="myBtn3">Buy Now</button>
       </div>
     </div>
-    <div id="myModal" class="modal">
+      <div id="myModal" class="modal">
 
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
-          <h2>Modal Header</h2>
+          <h2>You can pay with VISA/MasterCard or pay with Kaspi QR</h2>
         </div>
         <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
+          <form action="#" method="post" class="frompay">
+
+            <legend><h1>Payment form</h1></legend>  
+          
+            
+        <hr>
+        <p>
+            Card Type: <select name="card_type" id="card_type"required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="payal">MasterCard</option>
+            </select>
+        
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number"required placeholder="777 777 777 777"></p>
+        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"required dd-mm-yyyy></p>
+        <p style="padding-bottom:1rem ;">CVV <input style="padding-bottom:1rem ;" type="password" name="cvv" id="cvv" required placeholder="123"></p>
+        <input  type="button" value="Pay Now">
+          
+            
+          </form>
+
+          <br><h5>OR</h5><br>
+
+          <img src="https://images.satu.kz/183226187_modul-oplaty-kaspi.jpg" alt="" width="200vw" height="200vh">
         </div>
         
       </div>
     
     </div>
+
   </section>
 
 
