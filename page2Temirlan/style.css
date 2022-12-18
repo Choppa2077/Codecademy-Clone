@@ -359,6 +359,15 @@ align-items: center;
   transform: rotate(180deg);
 }
 
+#planarr1,#planarr3,#planarr2,#planarr4{
+  vertical-align: middle;
+  transition: all 0.5s linear;
+}
+
+.bxs-chevron-down.transform {
+  transform: rotate(180deg);
+}
+
 
 
 
@@ -578,3 +587,42 @@ align-items: center;
   
 
 
+hr{
+  color: black;
+  background-color: black;
+  box-shadow: none;
+  border-color: black;
+  size: 1px;
+  font-size: 1px;
+}
+
+
+  .table-plane{
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  .root-wrap{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .wrap1{
+    padding: 1rem;
+  }
+
+  .ch-t{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media(max-width:600px) {
+    .root-wrap{
+      display: flex;
+      flex-direction: column;
+    }
+  }

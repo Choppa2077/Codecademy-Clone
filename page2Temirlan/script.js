@@ -30,10 +30,30 @@ $(document).ready(function(){
     $(this).next().slideToggle('slow');
     $("#d-arrow6").toggleClass('transform');
    })
+
+   $("#plan1 #planclick1").click(function(){
+    $(this).next().slideToggle(1000);
+    $("#planarr1").toggleClass('transform');
+   });
+   $("#plan2 #planclick2").click(function(){
+    $(this).next().slideToggle(1000);
+    $("#planarr2").toggleClass('transform');
+   });
+   $("#plan3 #planclick3").click(function(){
+    $(this).next().slideToggle(1000);
+    $("#planarr3").toggleClass('transform');
+   });
+   $("#plan4 #planclick4").click(function(){
+    $(this).next().slideToggle(1000);
+    $("#planarr4").toggleClass('transform');
+   });
+
+   
   });
 
   
 
+  
 
   
   
