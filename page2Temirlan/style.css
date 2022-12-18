@@ -353,7 +353,14 @@ align-items: center;
 
 
 
+#d-arrow1,#d-arrow2,#d-arrow3,#d-arrow4,#d-arrow5,#d-arrow6{
+  vertical-align: middle;
+  transition: all 0.5s linear;
+}
 
+.bxs-chevron-down.transform {
+  transform: rotate(180deg);
+}
 
 
 
@@ -430,5 +437,28 @@ footer{
 
 
 
+.root-tp{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.team-plans{
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  align-items: center;
+}
+.team-plans div{ 
+  padding: 1rem;
+}
 
-
+@media (max-width:600px) {
+  .team-plans{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  .team-plans div{
+    padding: 1rem;
+  }
+}
