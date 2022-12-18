@@ -103,6 +103,29 @@ body{
   word-spacing: 6px;
   font-size: 18px;
 }
+.searchInput2{
+  color: black;
+  height: 70px;
+  /* margin-bottom: 50px; */
+  /* border: none; */
+  border: 1px solid black;
+  /* padding: 20px 15px; */
+  width: 550px;
+  /* text-align: center; */
+  padding-left: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  word-spacing: 6px;
+  font-size: 18px;
+  border-right: none;
+}
+.searchInput2::placeholder {
+  font-weight: 500;
+  /* opacity: .5; */
+  color: black;
+  padding-left: 20px;
+}
+
 .container {
   display: flex;
   margin-top: 20px;
@@ -143,4 +166,17 @@ body{
 
 .imageSquare{
   width: 100%;
+}
+.map{
+  margin-top: 60px;
+  /* border: 1px solid black; */
+  width: 68%;
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./img/map-removebg-preview.png');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0px;
 }
