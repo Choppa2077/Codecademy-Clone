@@ -613,7 +613,9 @@ hr{
 
   .wrap1{
     padding: 1rem;
+    border: 1px solid black;
   }
+  
 
   .ch-t{
     display: flex;
