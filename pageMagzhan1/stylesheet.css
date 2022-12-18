@@ -32,7 +32,7 @@ body{
   
   width: 100%;
   height: 500px;
-  background-image: url('./img/stairspic.png');
+  background-image: url('http://127.0.0.1:5500/img/stairspic.png');
   background-size: cover;
   background-position: center;
 }
@@ -175,8 +175,64 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./img/map-removebg-preview.png');
+  background-image: url('http://127.0.0.1:5500/img/map-removebg-preview.png');
   background-size: cover;
   background-position: center;
   margin-bottom: 0px;
+}
+.regionBlock{
+  width: 100%;
+  height: 400px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchRegion{
+  width: 75%;
+  height: 350px;
+  /* border: 1px black solid; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+.countriesText{
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  word-spacing: 5px;
+  font-weight: 500;
+  margin: 20px;
+  margin-bottom: 5px;
+
+}
+
+
+
+
+.textBlock{
+  transition: 0.3s;
+}
+
+.textBlock:hover{
+  border-bottom: 5px solid blue;
+
+}
+
+.flagsBlock{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.countryFlag{
+  width: 200px;
+  margin: 30px;
+  margin-bottom: 5px;
+  transition: 0.5s
+}
+
+.countryFlag:hover{
+  background-color: lightgray;
+
 }
