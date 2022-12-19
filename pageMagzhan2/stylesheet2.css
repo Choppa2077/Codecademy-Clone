@@ -102,3 +102,59 @@ p{
   padding: 8px;
   border: 2px solid black ;
 }
+.categorydiv{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(69, 69, 69);
+  font-family: Suisse;
+  font-size: 13px;
+}
+.longBlocks{
+  padding: 7px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  /* margin-top: 20px; */
+  width: 98%;
+  height: 90px;
+  border: 1px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.longBlocksMainDiv{
+  margin-top: 17px;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.headerText{
+  margin: 2px 0 5px 0;
+  
+  font-family: Apercu;
+  font-size: 19px;
+}
+
+.textDescription{
+  line-height: 17px;
+  color: rgb(84, 85, 87);
+  width: 450px;
+  font-weight: 500;
+  font-family: sans-serif;
+  /* color: #10162f !important; */
+  font-size: 13px;
+}
+
+.aTagsBlock{
+  margin-right: 170px;
+  font-family: sans-serif;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgb(77, 46, 219);
+}
