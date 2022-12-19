@@ -25,7 +25,7 @@ if( ! preg_match("/[0-9]/", $_POST["password"] )){
 }
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-require DIR . "/database.php";
+require( __DIR__ . "/database.php");
 $sql = "INSERT INTO user (name, email, password_hash)
         VALUES (?, ?, ?)";
 $stmt =  $mysqli ->stmt_init();
