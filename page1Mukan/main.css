@@ -1,0 +1,110 @@
+button:hover {
+  color: rgb(58, 16, 229);
+  background-color: rgb(221, 216, 216);
+  cursor: pointer;
+}
+input {
+  height: 50px;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.content {
+  padding: 150px 0px 0px 0px;
+}
+.twoSides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mainRightSide {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+.insideRightSide {
+  max-width: 500px;
+}
+.mainLeftSide {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+.mainLeftSide img {
+  max-width: 500px;
+  max-height: 448px;
+}
+.insideLeftSide {
+  max-width: 500px;
+}
+.insideRightSide h1 {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.insideRightSide button {
+  background-color: rgb(58, 16, 229);
+  color: white;
+  height: 40px;
+  width: 15%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.insideRightSide p {
+  width: 90%;
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 820px) {
+  .content {
+    padding: 70px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 820px) {
+  .mainLeftSide {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .mainLeftSide img {
+    max-width: 260px;
+  }
+}
+.twoSides {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 820px) {
+}
+@media (max-width: 820px) {
+  .mainRightSide {
+    display: none;
+  }
+  .rightSide {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .insideLeftSide {
+    width: 100%;
+  }
+}
+
+@media (min-width: 821px) {
+  .rightSide {
+    opacity: 0;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
