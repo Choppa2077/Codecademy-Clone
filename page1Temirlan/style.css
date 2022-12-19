@@ -14,7 +14,7 @@ hr{
 	border:none
 }
 body {
-  
+  background-color:rgb(246,245,250);
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
@@ -124,7 +124,10 @@ svg{
 
 
 .card button {
-  border: none;
+  padding-top: 0.5rem;
+  background-color:  white;
+  color:  rgb(16, 22, 47);;
+  border-top: 1px solid black;
   padding: 8px;
   text-align: center;
   cursor: pointer;
@@ -148,18 +151,15 @@ svg{
 
 
   button:hover{
-  background-color: burlywood;
+  background-color:  rgb(16, 22, 47);
+  color: white;;
 }
 .card:hover{
   box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
   box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
   transition: all 1s;
 }
-.type-c{
-  margin: 0;
-  padding: 0;
-  background-color: #e9fdc5 ;
-}
+
 
 
 .for-type{
@@ -502,7 +502,12 @@ width: 100%;
     
     *{
       list-style:none;
-      
+      text-align: center;
+    }
+    
+
+    footer{
+      background-color:rgb(246,245,250);
     }
     hr{
       background-color: black;
@@ -527,10 +532,12 @@ width: 100%;
     margin: 0.4rem 0 ;
   }
   
-  
+  .container1 div:nth-child(3) ul li{
+    text-align: center;
+  };
  
   .resources , .title,.support,.community,.iplans,.eplans,.mobile{
-      line-height: 1.5;
+      
       font-size: 0.875rem;
       text-transform: uppercase;
       margin-top: 1.5rem;
@@ -562,7 +569,7 @@ width: 100%;
   }
 
   .lang ul {
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
   
   .lang ul li{
@@ -580,7 +587,7 @@ width: 100%;
     display:block;float:left;width:50%;
   }
   .subjects ul {
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
   
   .subjects p{
@@ -634,7 +641,8 @@ h5 {
 }
 body {
   height: 100%;
-  background-color: #fff0e5;
+  
+  background-color:rgb(246,245,250);
 }
 a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
