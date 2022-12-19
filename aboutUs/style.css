@@ -115,6 +115,33 @@ background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
+.contact-us{
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.contact-info{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  margin: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+.contact-info span{
+  display: block;
+}
+.contact-info div{
+  margin: 0.8rem 0;
+  padding: 1rem;
+}
+.contact-info span .fas{
+  font-size: 2rem;
+  padding-bottom: 0.9rem;
+  color: #f7327a;
+}
+.contact-info div span:nth-child(2){
+  font-weight: 500;
+  font-size: 1.1rem;
+}
 
 
 
