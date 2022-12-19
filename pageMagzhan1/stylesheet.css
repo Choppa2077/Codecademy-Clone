@@ -25,6 +25,7 @@ body{
 .flex{
   display: flex;
 }
+
 .stairsBlock{
   display: flex;
   justify-content: center;
@@ -32,7 +33,7 @@ body{
   
   width: 100%;
   height: 500px;
-  background-image: url('./img/stairspic.png');
+  background-image: url('http://127.0.0.1:5500/img/stairspic.png');
   background-size: cover;
   background-position: center;
 }
@@ -44,6 +45,7 @@ body{
   color: #10162F ;
   text-align: center ;
 }
+
 .regButtonDiv{
   width: 100%;
   height: 60px;
@@ -65,6 +67,7 @@ body{
   align-items: center;
   background-color: rgb(58,16,229);
 }
+
 .bigDiv{
   background-color: white;
   width: 100%;
@@ -83,6 +86,7 @@ body{
   padding-bottom: 65px;
   padding-top: 45px;
 }
+
 .UpcomingMeetupsTextDiv{
   margin-top: 50px;
   width: 100%;
@@ -90,6 +94,7 @@ body{
   justify-content: center;
   font-size: 19px;
 }
+
 .searchInput{
   height: 60px;
   /* margin-bottom: 50px; */
@@ -103,6 +108,31 @@ body{
   word-spacing: 6px;
   font-size: 18px;
 }
+
+.searchInput2{
+  color: black;
+  height: 70px;
+  /* margin-bottom: 50px; */
+  /* border: none; */
+  border: 1px solid black;
+  /* padding: 20px 15px; */
+  width: 550px;
+  /* text-align: center; */
+  padding-left: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  word-spacing: 6px;
+  font-size: 18px;
+  border-right: none;
+}
+.searchInput2::placeholder {
+  font-weight: 500;
+  /* opacity: .5; */
+  color: black;
+  padding-left: 20px;
+}
+
+
 .container {
   display: flex;
   margin-top: 20px;
@@ -121,6 +151,7 @@ body{
   transition: 0.5s;
  
 }
+
 .button:hover{
   width: fit-content;
   
@@ -144,3 +175,310 @@ body{
 .imageSquare{
   width: 100%;
 }
+
+.map{
+  margin-top: 60px;
+  /* border: 1px solid black; */
+  width: 68%;
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('http://127.0.0.1:5500/img/map-removebg-preview.png');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0px;
+}
+
+.regionBlock{
+  width: 100%;
+  height: 400px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchRegion{
+  width: 75%;
+  height: 350px;
+  /* border: 1px black solid; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+.countriesText{
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  word-spacing: 5px;
+  font-weight: 500;
+  margin: 20px;
+  margin-bottom: 5px;
+
+}
+
+
+
+
+.textBlock{
+  transition: 0.3s;
+}
+
+.textBlock:hover{
+  border-bottom: 5px solid blue;
+
+}
+
+.flagsBlock{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.countryFlag{
+  width: 200px;
+  margin: 30px;
+  margin-bottom: 5px;
+  transition: 0.5s
+}
+.countryFlagW{
+  width: 200px;
+  margin: 10px;
+  margin-bottom: 15px;
+
+  transition: 0.5s
+}
+.countryFlagW:hover{
+  background-color: lightgray;
+
+}
+
+.countryFlag:hover{
+  background-color: lightgray;
+
+}
+.blogText{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.blogText:hover{
+  border-bottom: 2px solid black;
+}
+
+.blogThickText{
+  font-family: sans-serif;
+  font-size: 14px;
+  word-spacing: 5px;
+  font-weight: 100;
+  color: rgb(71, 71, 71);
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  background-image: url('http://127.0.0.1:5500/img/shiqihe_.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+.blogPost{
+  width: 100%;
+  /* height: 700px; */
+  display: flex;
+  justify-content: center;
+}
+
+.blockPostShort{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 78%;
+}
+
+.post{
+  margin-right: 28px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 360px;
+  height: 320px;
+  /* background-color: aqua; */
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1.3;
+  font-weight: 600;
+}
+@media screen and (min-width:800px) {
+  
+
+  *{
+    list-style:none;
+    text-align: center;;
+  }
+  
+  
+  footer{
+   background-color: white; 
+    padding-top:2rem ;
+    
+  }
+  .tophr{
+    border: 0.5px solid black;;
+    background-color: black;
+    
+     
+  }
+  .container1{
+    width: 49%;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .mob-app li img {
+    width: 100%;
+    height: 100%;
+  
+    
+  }
+  
+  .download{
+    margin-left: 3rem;
+    display: flex;
+    
+  }
+  
+  
+  
+  .mob-app{
+    display: flex;
+  
+  }
+  .container2{
+    width: 49%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .course-div{
+    display: none;
+  }
+  
+  footer{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .micro-info,.br{
+    display: none;
+  
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width:800px){
+   
+    
+    *{
+      list-style:none;
+      text-align: center;
+      
+    }
+    hr{
+      background-color: black;
+      border:solid 0.0001em black;;
+    }
+  
+    .cc{
+      display: none;
+    }
+  .container1{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
+    background-color: rgb(255, 240, 229);
+  }
+  
+  .section-1{
+    text-align: center;
+  }
+  ul li {
+    font-size: 0.9rem;
+    margin: 0.4rem 0 ;
+  }
+  
+  
+ 
+  .resources , .title,.support,.community,.iplans,.eplans,.mobile{
+      line-height: 1.5;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+  
+  .download{
+      grid-column: 1/3;
+  }
+  .download  li {
+    margin: 0.5rem 0 0.5rem 0;
+      display: inline-block;
+      width: 49%;
+      
+  }
+  .download ul li img{
+    margin-left:1.5rem ;
+    width: 40%;
+    height: 35%;
+  }
+  
+  
+  
+ 
+  .lang h4{
+    text-align:center;
+  }
+  
+  .lang ul li{
+    display:block;float:left;width:49%;
+  }
+  
+  
+  .subjects h4{
+    text-align:center;
+  }
+  
+  .subjects ul li{
+    display:block;float:left;width:49%;
+  }
+  
+  .subjects p{
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  
+  .legal-cont p{
+    margin-top: 5rem;
+    
+    text-align: center;
+  }
+  }

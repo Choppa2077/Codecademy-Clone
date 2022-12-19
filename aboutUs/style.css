@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.about-codestar{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url('https://assets.entrepreneur.com/content/3x2/2000/20160628101609-Coding.jpeg?auto=webp&quality=95&crop=16:9&width=675');
+  background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay{
+  width: 70%;
+  height: 100%;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+
+
+
+.container {
+  text-align: center;
+  
+  background-color: rgb(255, 240, 229);
+}
+
+.header {
+  padding-top: 30px;
+  color: #444;
+  font-size: 20px;
+  margin: auto;
+  line-height: 50px;
+}
+
+.root {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teams {
+  margin: 10px;
+  padding: 22px;
+  max-width: 30%;
+  cursor: pointer;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.teams:hover {
+  background: #ddd;
+  border-radius: 12px;
+}
+
+.teams img {
+  width: 200px;
+  height: 200px;
+}
+
+.name {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.job {
+  font-style: italic;
+  color: #888;
+}
+
+.about {
+  margin: 20px 0;
+  font-weight: lighter;
+  color: #4e4e4e;
+}
+
+.links {
+  margin: 14px;
+}
+
+.links a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  transition: .4s;
+}
+
+.links a:hover {
+  transform: scale(1.5);
+}
+
+.links a i {
+  color: #444;
+}
+
+@media screen and (max-width: 600px) {
+  .teams {
+      max-width: 100%;
+  }
+}
+

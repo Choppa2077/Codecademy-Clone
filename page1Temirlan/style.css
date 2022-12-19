@@ -28,7 +28,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:#fff0e5;
+  background-color:white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -44,7 +44,8 @@ body {
 }
 
 .sidebar a:hover {
-  color: black;;
+  color: black;
+  cursor: pointer;
 }
 
 .sidebar .closebtn {
@@ -71,7 +72,7 @@ body {
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
+  
 }
 
 
@@ -167,11 +168,13 @@ svg{
   padding: 1rem;
 }
 
-.top-prof{
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 50vh;
+
+
+.info-link{
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .prof-item img{
   width: 75%;
   height: 75%;
@@ -180,28 +183,46 @@ svg{
 
 
 
-.grid{
-  display: grid;
-  
-  grid-gap: 1rem;
-}
-.items-cat{
-  width: 100%;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 95%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
 
-.col{
-  border-radius: 2px;
-  border: 1px solid black;
-  background-color: white !important;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
- 
-  
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
-.col:hover{
+
+
+
+
+
+.grid{
+  display: grid;
+  padding: 1%;
+  grid-gap: 1rem;
+}
+
+
+
+
+
+
+
+.card:hover{
   
   -webkit-box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
 -moz-box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
@@ -219,17 +240,19 @@ transition: all 1s;
   display: flex;
   justify-content: space-between;
 }
-
-
-
 .parent{
-  padding-top: 5rem;
+  
+  padding-top: 50rem;   
   display: flex;
   justify-content: center;
+
+  
+
 }
 
 .inspired{
   width: 70%;
+  
 }
 .get{
   display: grid;
@@ -270,3 +293,60 @@ grid-template-columns: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
   }  
 }  
+
+
+
+
+
+
+
+.top-prof{
+  width: 100%;
+
+}
+
+.course img{
+  
+    width: 100%;
+    height: 95%;
+  
+}
+.course{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course:nth-child(2){
+  margin-left: 1rem;
+}
+.course:nth-child(1){
+  margin-left: 1rem;
+}
+
+.argentina-champ{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width:960px){
+  .argentina-champ{
+    display: flex;
+    flex-direction: column;
+  }
+  .course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .course img{
+    width: 100%;
+    height: 20%;
+  }
+}
+
+#first{
+  width: 100px;
+  height: 100px;
+}
