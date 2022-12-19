@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('\page2Temirlan\digital-7.regular.ttf');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: none;;
+    outline: none;
+    
 }
 
 body{
@@ -14,21 +16,22 @@ body{
 
 
 
-#timer {
+/* #ti {
   z-index: 99999;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   text-align: center;
+  font-family: nu;
+} */
+
+
+.clock{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;;
+  margin-top: 3.5rem;
+
 }
-#timer{
-  background: #fff;
-  color: #000;
-  width: 100px;
-  margin: 50px auto;
-}
-
-
-
 .row1{
   padding-top:6rem ;
   display: flex;

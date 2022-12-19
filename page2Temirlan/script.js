@@ -91,16 +91,12 @@ window.onclick = function(event) {
 
 
 
-   
-  });
 
-  const currentScroll = window.pageYOffset;
-if (currentScroll > 0) {
-  document.getElementsByClassName("header").style.backgroundColor = "white";
-}
+
+
 
 var timer;
-var ele = document.getElementById('timer');
+var ele = document.getElementById('ti');
 
 (function (){
   var sec = 0;
@@ -111,7 +107,46 @@ var ele = document.getElementById('timer');
 })() 
 
 
+
+function checkTime(){
+  var today = new Date();
+  var hr = today.getHours();
+  var min = today.getMinutes();
+  var sec = today.getSeconds();
+  var hours = document.querySelector(".hours");
+  var minutes = document.querySelector(".minutes");
+  var seconds = document.querySelector(".seconds");
   
+  if(hr < 10){
+    hr = "0" + hr;
+  }
+    if(min < 10){
+    min = "0" + min;
+  }
+    if(sec < 10){
+    sec = "0" + sec;
+  }
+  
+  hours.textContent = hr + " : ";
+  minutes.textContent = min + " : ";
+  seconds.textContent = sec+" Current Time";
+}
+
+setInterval(checkTime, 500);
+
+
+
+
+
+   
+  });
+
+  const currentScroll = window.pageYOffset;
+if (currentScroll > 0) {
+  document.getElementsByClassName("header").style.backgroundColor = "white";
+}
+
+
 
   
 
