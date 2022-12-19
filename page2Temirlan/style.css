@@ -29,9 +29,11 @@ body{
   display: flex;
   justify-content: space-around;
   position: fixed;;
-  margin-top: 3.5rem;
+  margin-top: 6rem;
 
 }
+
+
 .row1{
   padding-top:6rem ;
   display: flex;

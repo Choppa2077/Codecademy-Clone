@@ -95,16 +95,6 @@ window.onclick = function(event) {
 
 
 
-var timer;
-var ele = document.getElementById('ti');
-
-(function (){
-  var sec = 0;
-  timer = setInterval(()=>{
-    ele.innerHTML = '00:'+sec;
-    sec ++;
-  }, 1000) // each 1 second
-})() 
 
 
 
@@ -129,7 +119,7 @@ function checkTime(){
   
   hours.textContent = hr + " : ";
   minutes.textContent = min + " : ";
-  seconds.textContent = sec+" Current Time";
+  seconds.textContent = sec;
 }
 
 setInterval(checkTime, 500);
