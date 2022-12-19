@@ -479,3 +479,40 @@ input {
     margin-right: 10px;
   }
 }
+.content3 {
+  height: 500px;
+  background-color: rgb(255, 211, 0);
+  display: flex;
+  align-items: center;
+}
+.mainLeftSide2 {
+  width: 50%;
+}
+
+.mainLeftSide2 button {
+  margin-top: 40px;
+  background-color: rgb(58, 16, 229);
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.mainRightSide2 {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  align-items: center;
+  width: 50%;
+}
+
+.mainRightSide2 img {
+  max-width: 500px;
+  max-height: 448px;
+}
+@media (max-width: 820px) {
+  .mainRightSide2 img {
+    width: 100px;
+    max-height: 448px;
+  }
+}
