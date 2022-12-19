@@ -312,3 +312,170 @@ input {
     justify-content: center;
   }
 }
+
+.content2 {
+  padding: 70px 0px 0px 0px;
+}
+.up {
+  background-color: rgb(16, 22, 47);
+  height: 350px;
+  position: relative;
+}
+.container2 {
+  padding: 40px 0px 0px 0px;
+}
+
+.p-and-h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centering-row {
+  display: flex;
+  justify-content: center;
+}
+
+.categories-buttons {
+  position: absolute;
+  top: 150px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.categories-buttons button {
+  color: white;
+  margin-left: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.categories-buttons button:hover {
+  cursor: pointer;
+  background-color: gray;
+  border-radius: 3px;
+}
+.up p {
+  color: white;
+}
+.up h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.centering-row button {
+  color: white;
+}
+
+.bottom {
+  height: 200px;
+  background-color: rgb(33, 19, 123);
+  width: 100%;
+  position: relative;
+}
+.flex-courses {
+  display: flex;
+  justify-content: center;
+}
+.free-courses {
+  margin-bottom: 300px;
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 300px;
+  width: 80%;
+  top: 250px;
+}
+.learn {
+  background-color: white;
+  max-width: 290px;
+  height: 180px;
+  position: relative;
+}
+.learn:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  transition: all 0.1s ease;
+  box-shadow: 10px 10px;
+}
+.learn-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.learn-bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.learn p {
+  color: black;
+  margin-bottom: 12px;
+}
+.count {
+  font-weight: bold;
+}
+
+.learn h3 {
+  margin-bottom: 4px;
+}
+.learn li {
+}
+
+@media (max-width: 820px) {
+  .categories-buttons {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+  }
+  .free-courses {
+    margin-bottom: 300px;
+    position: absolute;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    width: 100%;
+    top: 250px;
+  }
+  .learn {
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 250px;
+  }
+  .bottom {
+    height: 350px;
+  }
+  .up {
+    height: 450px;
+  }
+  .mainRightSide2 img {
+    width: 200px;
+    max-height: 448px;
+  }
+}
+
+@media (max-width: 680px) {
+  .learn {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 822px) {
+  .learn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
