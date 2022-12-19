@@ -28,7 +28,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:#fff0e5;
+  background-color:white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -44,7 +44,8 @@ body {
 }
 
 .sidebar a:hover {
-  color: black;;
+  color: black;
+  cursor: pointer;
 }
 
 .sidebar .closebtn {
@@ -71,7 +72,7 @@ body {
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
+  
 }
 
 
@@ -167,11 +168,13 @@ svg{
   padding: 1rem;
 }
 
-.top-prof{
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 50vh;
+
+
+.info-link{
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .prof-item img{
   width: 75%;
   height: 75%;
@@ -180,28 +183,46 @@ svg{
 
 
 
-.grid{
-  display: grid;
-  
-  grid-gap: 1rem;
-}
-.items-cat{
-  width: 100%;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 95%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
 
-.col{
-  border-radius: 2px;
-  border: 1px solid black;
-  background-color: white !important;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
- 
-  
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
-.col:hover{
+
+
+
+
+
+.grid{
+  display: grid;
+  padding: 1%;
+  grid-gap: 1rem;
+}
+
+
+
+
+
+
+
+.card:hover{
   
   -webkit-box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
 -moz-box-shadow: 13px -13px 0px -2px rgb(16, 22, 47);
@@ -224,13 +245,7 @@ transition: all 1s;
   padding-top: 50rem;   
   display: flex;
   justify-content: center;
-  background-image: url('https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966');
-  background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
+
   
 
 }
@@ -278,3 +293,60 @@ grid-template-columns: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
   }  
 }  
+
+
+
+
+
+
+
+.top-prof{
+  width: 100%;
+
+}
+
+.course img{
+  
+    width: 100%;
+    height: 95%;
+  
+}
+.course{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course:nth-child(2){
+  margin-left: 1rem;
+}
+.course:nth-child(1){
+  margin-left: 1rem;
+}
+
+.argentina-champ{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width:960px){
+  .argentina-champ{
+    display: flex;
+    flex-direction: column;
+  }
+  .course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .course img{
+    width: 100%;
+    height: 20%;
+  }
+}
+
+#first{
+  width: 100px;
+  height: 100px;
+}
