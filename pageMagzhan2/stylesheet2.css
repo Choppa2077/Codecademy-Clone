@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  color: rgb(16,22,47);
+  background-color: rgb(242,251,255);
+  
+}
+
+.wrapper{
+  
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+  /* background-color: aqua; */
+  /* height: 100%; */
+}
+
+.backgroundImage{
+  position: absolute;
+  background-image: url(./img/stairsPic2.svg);
+  background-size: cover;
+  background-position: center;
+  top: 55px;
+  height: 290px;
+  width: 1500px;
+}
+h1{
+  margin: 0 0 5px 0;
+}
+p{
+  margin-top: 25px;
+  font-family: "Suisse";
+  font-weight: lighter;
+  font-size: .95rem;
+  line-height: 150%;
+  padding-bottom: 0.8125rem;
+  margin: 0;  
+  
+}
+
+.aTag{
+  font-family: Apercu;
+  font-weight: 400;
+}
