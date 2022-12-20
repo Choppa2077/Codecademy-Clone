@@ -33,7 +33,7 @@
 .container {
   text-align: center;
 
-  background-color: rgb(255, 240, 229);
+  background-color: rgb(246, 245, 250);
 }
 
 .header {
@@ -179,7 +179,7 @@ h5 {
 
 body {
   height: 100%;
-  background-color: #fff0e5;
+  background-color: rgb(246, 245, 250);
 }
 
 a {
