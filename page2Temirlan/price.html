@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="script.js"></script>
+
   <title>Document</title>
 </head>
+
 <body>
-  
+
 
 
   <header class="header">
     <div class="container">
-        <div class="header-body">
-            <a href="" class="header-logo">
-                <img src="mainPagePhotos/codecademy-logo-vector.png" alt="">
-            </a>
-            <div class="header-burger">
-                <span></span>
-            </div>
-            <nav class="header-menu">
-                <ul class="header-list">
-                    <li>
-                        <a href="\page1Temirlan\index.html" class="header-link">Catalog</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Resources</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Community</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Business Solution</a>
-                    </li>
-                    <div class="log-sign">
-                        <li>
-                            <button class="log-li header-link">Log In</button>
-                        </li>
-                        <li class="sign-up-header">
-                            <button class="header-link">Sign Up</button>
-                        </li>
-                    </div>
-                
-                </ul>
-            </nav>
+      <div class="header-body">
+        <a href="" class="header-logo">
+          <img src="mainPagePhotos/codecademy-logo-vector.png" alt="">
+        </a>
+        <div class="header-burger">
+          <span></span>
         </div>
+        <nav class="header-menu">
+          <ul class="header-list">
+            <li>
+              <a href="\page1Temirlan\index.html" class="header-link">Catalog</a>
+            </li>
+            <li>
+              <a href="" class="header-link">Resources</a>
+            </li>
+            <li>
+              <a href="" class="header-link">Community</a>
+            </li>
+            <li>
+              <a href="" class="header-link">Pricing</a>
+            </li>
+            <li>
+              <a href="" class="header-link">Business Solution</a>
+            </li>
+            <div class="log-sign">
+              <li>
+                <button class="log-li header-link">Log In</button>
+              </li>
+              <li class="sign-up-header">
+                <button class="header-link">Sign Up</button>
+              </li>
+            </div>
+
+          </ul>
+        </nav>
+      </div>
     </div>
-</header>
+  </header>
 
 
+
+  <div class="clock">
+    <div class="hours">hr</div>
+    <div class="minutes">min</div>
+    <div class="seconds">sec</div>
+  </div>
+
+
+
+
+  </div>
 
   <section class="row1">
     <div class="title-txt">
@@ -63,84 +76,111 @@
     </div>
   </section>
 
-  <div id="js_timer">
-    <div id="timer">
-      00:00
-    </div>
-    
-  <div>
-
-  </div >
 
   <section class="row2" style="z-index: 999999;">
     <div class="pricing">
       <div class="price-card">
         <div class="price-img">
-          <img src="data:image/png;base64,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" alt="">  
+          <img
+            src="data:image/png;base64,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"
+            alt="">
           <h4>Basic</h4>
         </div>
         <div class="price-info">
-            <p><span>Basic access to free courses</span></p>
-            <p><span>Community support</span></p>
-            <p><span>——</span></p>
-            <p><span>——</span></p>
-            
+          <p><span>Basic access to free courses</span></p>
+          <p><span>Community support</span></p>
+          <p><span>——</span></p>
+          <p><span>——</span></p>
+
         </div>
         <div class="price-num">
           <p><sub>$</sub>15.99<sub>/month</sub></p>
         </div>
         <button class="price-btn" id="myBtn">Buy Now</button>
-        
+
 
       </div>
     </div>
     <div id="myModal" class="modal">
 
-      <!-- Modal content -->
+      
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
           <h2>You can pay with VISA/MasterCard or pay with Kaspi QR</h2>
         </div>
         <div class="modal-body">
-          <form action="#" method="post" class="frompay">
 
-            <legend><h1>Payment form</h1></legend>  
-          
+
+          <form id="form" action="/">
+            <h1>Payment Form</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cn">Card Number</label>
+                <input id="cn" name="cn" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cvv">CVV</label>
+                <input id="cvv"name="cvv" type="password">
+                <div class="error"></div>
+            </div>
             
-        <hr>
-        <p>
-            Card Type: <select name="card_type" id="card_type"required>
+            <button type="submit">Pay Now</button>
+        </form>
+          
+
+
+          <!-- <form action="#" method="post" class="frompay" name="payform" onsubmit="v()">
+
+            <legend>
+              <h1>Payment form</h1>
+            </legend>
+
+
+            <hr>
+            <p>
+              Card Type: <select name="card_type" id="card_type" required>
                 <option value="">--Select a Card Type--</option>
                 <option value="visa">Visa</option>
                 <option value="payal">MasterCard</option>
-            </select>
-        
-        </p>
-        <p>Card Number: <input type="number" name="card_number" id="card_number"required placeholder="777 777 777 777"></p>
-        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"required dd-mm-yyyy></p>
-        <p style="padding-bottom:1rem ;">CVV <input style="padding-bottom:1rem ;" type="password" name="cvv" id="cvv" required placeholder="123"></p>
-        <input  type="button" value="Pay Now">
-          
-            
-          </form>
+              </select>
 
-          <br><h5>OR</h5><br>
+            </p>
+            <p>Card Number: <input type="number" name="card_number" id="card_number" required
+                placeholder="777 777 777 777"></p>
+            <p>Expiration Date: <input type="date" name="exp_date" id="exp_date" required dd-mm-yyyy></p>
+            <p style="padding-bottom:1rem ;">CVV <input style="padding-bottom:1rem ;" type="password" name="cvv"
+                id="cvv" required placeholder="123"></p>
+            <input name="payed" type="submit" value="Pay Now">
+
+
+          </form> -->
+
+          <br>
+          <h5>OR</h5><br>
           <div class="qrqr">
-          <img class="kaspiqr"  src="https://images.satu.kz/183226187_modul-oplaty-kaspi.jpg" alt="" width="200vw" height="200vh">
+            <img class="kaspiqr" src="https://images.satu.kz/183226187_modul-oplaty-kaspi.jpg" alt="" width="200vw"
+              height="200vh">
+          </div>
         </div>
-        </div>
-        
+
       </div>
-    
+
     </div>
 
 
     <div class="pricing">
       <div class="price-card">
         <div class="price-img">
-            <img src="data:image/png;base64,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" alt="">
-            <h4>Pro</h4>
+          <img
+            src="data:image/png;base64,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"
+            alt="">
+          <h4>Pro</h4>
         </div>
         <div class="price-info">
           <p><span>All courses</span></p>
@@ -155,28 +195,30 @@
       </div>
       <div id="myModal" class="modal">
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-        </div>
         
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+
+        </div>
+
       </div>
-    
-    </div>
     </div>
 
 
     <div class="pricing">
       <div class="price-card">
         <div class="price-img">
-            <img src="data:image/png;base64,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" alt="">
-            <h4>Premium</h4>
+          <img
+            src="data:image/png;base64,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"
+            alt="">
+          <h4>Premium</h4>
         </div>
         <div class="price-info">
           <p><span>All courses</span></p>
@@ -190,9 +232,9 @@
         <button class="price-btn" id="myBtn3">Buy Now</button>
       </div>
     </div>
-      <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
-      <!-- Modal content -->
+      
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
@@ -201,33 +243,38 @@
         <div class="modal-body">
           <form action="#" method="post" class="frompay">
 
-            <legend><h1>Payment form</h1></legend>  
-          
-            
-        <hr>
-        <p>
-            Card Type: <select name="card_type" id="card_type"required>
+            <legend>
+              <h1>Payment form</h1>
+            </legend>
+
+
+            <hr>
+            <p>
+              Card Type: <select name="card_type" id="card_type" required>
                 <option value="">--Select a Card Type--</option>
                 <option value="visa">Visa</option>
                 <option value="payal">MasterCard</option>
-            </select>
-        
-        </p>
-        <p>Card Number: <input type="number" name="card_number" id="card_number"required placeholder="777 777 777 777"></p>
-        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"required dd-mm-yyyy></p>
-        <p style="padding-bottom:1rem ;">CVV <input style="padding-bottom:1rem ;" type="password" name="cvv" id="cvv" required placeholder="123"></p>
-        <input  type="button" value="Pay Now">
-          
-            
+              </select>
+
+            </p>
+            <p>Card Number: <input type="number" name="card_number" id="card_number" required
+                placeholder="777 777 777 777"></p>
+            <p>Expiration Date: <input type="date" name="exp_date" id="exp_date" required dd-mm-yyyy></p>
+            <p style="padding-bottom:1rem ;">CVV <input style="padding-bottom:1rem ;" type="password" name="cvv"
+                id="cvv" required placeholder="123"></p>
+            <input type="button" value="Pay Now">
+
+
           </form>
 
-          <br><h5>OR</h5><br>
+          <br>
+          <h5>OR</h5><br>
 
           <img src="https://images.satu.kz/183226187_modul-oplaty-kaspi.jpg" alt="" width="200vw" height="200vh">
         </div>
-        
+
       </div>
-    
+
     </div>
 
   </section>
@@ -238,370 +285,360 @@
   <section class="root-tp">
     <div class="team-plans">
       <div>Looking for team plans?</div>
-      <div><a href="http://www.crowe-associates.co.uk/teams-and-groups/team-plans/" style="text-decoration: none;"> Request a quote </a></div>
-      <div><img src="https://images.ctfassets.net/go6kr6r0ykrq/PYne7mqulpvjaB5nPvDa6/6c6d8147eea282251fa6eaaf59be19c2/logo_google.svg" alt=""></div>
-      <div><img src="https://images.ctfassets.net/go6kr6r0ykrq/72AZyKX3opZXlRfoFrzHjI/507ee61b41fb83ee883e12b81969fed2/logo_amazon.svg" alt=""></div>
-      <div><img src="https://images.ctfassets.net/go6kr6r0ykrq/1pt1r8TQivUplejoVyFroo/17ed022179fa69d06695db3adcee5acb/logo_spotify.svg" alt=""></div>
+      <div><a href="http://www.crowe-associates.co.uk/teams-and-groups/team-plans/" style="text-decoration: none;">
+          Request a quote </a></div>
+      <div><img
+          src="https://images.ctfassets.net/go6kr6r0ykrq/PYne7mqulpvjaB5nPvDa6/6c6d8147eea282251fa6eaaf59be19c2/logo_google.svg"
+          alt=""></div>
+      <div><img
+          src="https://images.ctfassets.net/go6kr6r0ykrq/72AZyKX3opZXlRfoFrzHjI/507ee61b41fb83ee883e12b81969fed2/logo_amazon.svg"
+          alt=""></div>
+      <div><img
+          src="https://images.ctfassets.net/go6kr6r0ykrq/1pt1r8TQivUplejoVyFroo/17ed022179fa69d06695db3adcee5acb/logo_spotify.svg"
+          alt=""></div>
     </div>
   </section>
 
 
 
 
-<section class="table-plane">
-  <div class="root-wrap">
-  <div class="wrap1">
-    <article  class="plan" id="plan1">
-      <h4 class="active" id="planclick1" style="cursor: pointer;">Start Learning <i id="planarr1" class='bx bxs-chevron-down' ></i></h4>
-      <div style="display: none;" id="hide">
-      <div style="padding-top: 1rem;">
-        <h5>Basic access to free courses</h5>
-        <div class="tarif">
-          <div class="ch-t">
-            <div>Basic</div>
-            <div><i class='bx bx-check-circle' ></i></div>
+  <section class="table-plane">
+    <div class="root-wrap">
+      <div class="wrap1">
+        <article class="plan" id="plan1">
+          <h4 class="active" id="planclick1" style="cursor: pointer;">Start Learning <i id="planarr1"
+              class='bx bxs-chevron-down'></i></h4>
+          <div style="display: none;" id="hide">
+            <div style="padding-top: 1rem;">
+              <h5>Basic access to free courses</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Learning resources</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Practice on our mobile app</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div>Limited</div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div>Unlimited</div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div>Unlimited</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Personalized practice</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <hr>
-          <div class="ch-t">
-            <div>Pro</div>
-            <div><i class='bx bx-check-circle' ></i></div>
-          </div>
-          <hr>
-          <div class="ch-t">
-            <div>Premium</div>
-            <div><i class='bx bx-check-circle' ></i></div>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div style="padding-top: 1rem;">
-        <h5>Learning resources</h5>
-        <div class="tarif">
-          <div class="ch-t">
-            <div>Basic</div>
-            <div><i class='bx bx-check-circle' ></i></div>
+      <div class="wrap1">
+        <article class="plan" id="plan2">
+          <h4 class="active" id="planclick2" style="cursor: pointer;">Build your skills <i id="planarr2"
+              class='bx bxs-chevron-down'></i></h4>
+          <div style="display: none;" id="hide">
+            <div style="padding-top: 1rem;">
+              <h5>Skill paths
+              </h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Certificates of completion
+
+              </h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Real-world projects
+
+              </h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <hr>
-          <div class="ch-t">
-            <div>Pro</div>
-            <div><i class='bx bx-check-circle' ></i></div>
-          </div>
-          <hr>
-          <div class="ch-t">
-            <div>Premium</div>
-            <div><i class='bx bx-check-circle' ></i></div>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div style="padding-top: 1rem;">
-        <h5>Practice on our mobile app</h5>
-        <div class="tarif">
-          <div class="ch-t">
-            <div>Basic</div>
-            <div>Limited</div>
+      <div class="wrap1">
+        <article class="plan" id="plan3">
+          <h4 class="active" id="planclick3" style="cursor: pointer;">Land a job <i id="planarr3"
+              class='bx bxs-chevron-down'></i></h4>
+          <div style="display: none;" id="hide">
+            <div style="padding-top: 1rem;">
+              <h5>Career paths</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Career paths group</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem;">
+              <h5>Technical interview prep</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <hr>
-          <div class="ch-t">
-            <div>Pro</div>
-            <div>Unlimited</div>
-          </div>
-          <hr>
-          <div class="ch-t">
-            <div>Premium</div>
-            <div>Unlimited</div>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div style="padding-top: 1rem;">
-        <h5>Personalized practice</h5>
-        <div class="tarif">
-          <div class="ch-t">
-            <div>Basic</div>
-            <div><i class='bx bxs-minus-circle' ></i></i></div>
-          </div>
-          <hr>
-          <div class="ch-t">
-            <div>Pro</div>
-            <div><i class='bx bx-check-circle' ></i></div>
-          </div>
-          <hr>
-          <div class="ch-t">
-            <div>Premium</div>
-            <div><i class='bx bx-check-circle' ></i></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </article>
-  </div>
-
-    <div class="wrap1"> 
-      <article  class="plan" id="plan2">
-        <h4 class="active" id="planclick2" style="cursor: pointer;">Build your skills <i id="planarr2" class='bx bxs-chevron-down' ></i></h4>
-        <div style="display: none;" id="hide">
-        <div style="padding-top: 1rem;">
-          <h5>Skill paths
-          </h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
+      <div class="wrap1">
+        <article class="plan" id="plan4">
+          <h4 class="active" id="planclick4" style="cursor: pointer;">Additional features <i id="planarr4"
+              class='bx bxs-chevron-down'></i></h4>
+          <div style="display: none;" id="hide">
+            <div style="padding-top: 1rem;">
+              <h5>Basic access to free courses</h5>
+              <div class="tarif">
+                <div class="ch-t">
+                  <div>Basic</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Pro</div>
+                  <div><i class='bx bxs-minus-circle'></i></div>
+                </div>
+                <hr>
+                <div class="ch-t">
+                  <div>Premium</div>
+                  <div><i class='bx bx-check-circle'></i></div>
+                </div>
+              </div>
             </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding-top: 1rem;">
-          <h5>Certificates of completion
-
-          </h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding-top: 1rem;">
-          <h5>Real-world projects
-
-          </h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </article>
-    </div>
-
-    <div class="wrap1">
-      <article  class="plan" id="plan3">
-        <h4 class="active" id="planclick3" style="cursor: pointer;">Land a job <i id="planarr3" class='bx bxs-chevron-down' ></i></h4>
-        <div style="display: none;" id="hide">
-        <div style="padding-top: 1rem;">
-          <h5>Career paths</h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-        
-        <div style="padding-top: 1rem;">
-          <h5>Career paths group</h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding-top: 1rem;">
-          <h5 >Technical interview prep</h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </article>
-    </div>
-
-    <div class="wrap1">
-      <article  class="plan" id="plan4">
-        <h4 class="active" id="planclick4" style="cursor: pointer;">Additional features <i id="planarr4" class='bx bxs-chevron-down' ></i></h4>
-        <div style="display: none;" id="hide">
-        <div style="padding-top: 1rem;">
-          <h5>Basic access to free courses</h5>
-          <div class="tarif">
-            <div class="ch-t">
-              <div>Basic</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Pro</div>
-              <div><i class='bx bxs-minus-circle' ></i></div>
-            </div>
-            <hr>
-            <div class="ch-t">
-              <div>Premium</div>
-              <div><i class='bx bx-check-circle' ></i></div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<!-- 
-  <section class="upgrade">
-    <div>
-      <div>
-        <h3>Futures</h3>
-        <p>Learning resources</p>
-        <p>Certificates of completion</p>
-        <p>Technical interview prep
-        </p>
+        </article>
       </div>
     </div>
-    <div>
-      <div>
-        <h3>Basic</h3>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-checkbox-minus bx-tada bx-rotate-180' ></i></p>
-        <p><i class='bx bxs-checkbox-minus bx-tada bx-rotate-180' ></i></p>
-      </div>
     </div>
-    <div>
-      <div>
-        <h3>Pro</h3>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-checkbox-minus bx-tada bx-rotate-180' ></i></p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3>Premium</h3>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-      </div>
-    </div>
-    
-  </section> -->
+  </section>
 
 
-  
-  <div class="fq"><h2>Frequently asked questions</h2>
+
+
+
+
+
+  <div class="fq">
+    <h2>Frequently asked questions</h2>
     <h5 style="padding-top: 1vh;">General</h5>
-   </div>
-   <section class="question">
-      
-    <div class="">
-    <article  class="box" id="stick1">
-      <h3 class="active" id="click1" style="cursor: pointer;">Whats the difference between Basic,Pro and Premium? <i id="d-arrow1" class='bx bxs-chevron-down' ></i></h3>
-      <p style="display: none;" id="hide">Basic gives you access to free courses and the ability to start some more advanced courses.
-
-        Both Pro Lite and Pro include everything in Basic, plus extra content and features like real-world projects, guided paths, and assessments to test your skills.
-        
-        Pro  is for people looking to learn or advance a skill — so it includes all courses and most skill paths.
-        
-        Premium is for those looking to start or advance their career — so it includes everything in Pro Lite, plus career paths and interview prep skill paths.</p>
-    </article>
-
-    <article  class="box" id="stick2" style="cursor: pointer;">
-      <h3 class="active" id="click2">Do you offer a student discount?<i id="d-arrow2" class='bx bxs-chevron-down' ></i></h3>
-      <p style="display: none;" id="hide"> Yes! Eligible college students can join Codecademy Pro Student. It’s an annual membership with all the same features as Codecademy Pro, but for over 35% off the regular price. Click here to <a href="">join CodeStar Student.</a> </p>
-    </article>
-
-    <article  class="box" id="stick3" style="cursor: pointer;">
-      <h3 class="active" id="click3">Is CodeStar suitable for children?<i id="d-arrow3" class='bx bxs-chevron-down' ></i></h3>
-      <p style="display: none;" id="hide">Yes. Codecademy is suitable for children who can read and type. Coding is just like learning a new language or studying math. Children who learn to code when they’re young can set themselves up for a lifetime of opportunities for success.</p>
-    </article>
   </div>
+  <section class="question">
+
+    <div class="">
+      <article class="box" id="stick1">
+        <h3 class="active" id="click1" style="cursor: pointer;">Whats the difference between Basic,Pro and Premium? <i
+            id="d-arrow1" class='bx bxs-chevron-down'></i></h3>
+        <p style="display: none;" id="hide">Basic gives you access to free courses and the ability to start some more
+          advanced courses.
+
+          Both Pro Lite and Pro include everything in Basic, plus extra content and features like real-world projects,
+          guided paths, and assessments to test your skills.
+
+          Pro is for people looking to learn or advance a skill — so it includes all courses and most skill paths.
+
+          Premium is for those looking to start or advance their career — so it includes everything in Pro Lite, plus
+          career paths and interview prep skill paths.</p>
+      </article>
+
+      <article class="box" id="stick2" style="cursor: pointer;">
+        <h3 class="active" id="click2">Do you offer a student discount?<i id="d-arrow2" class='bx bxs-chevron-down'></i>
+        </h3>
+        <p style="display: none;" id="hide"> Yes! Eligible college students can join Codecademy Pro Student. It’s an
+          annual membership with all the same features as Codecademy Pro, but for over 35% off the regular price. Click
+          here to <a href="">join CodeStar Student.</a> </p>
+      </article>
+
+      <article class="box" id="stick3" style="cursor: pointer;">
+        <h3 class="active" id="click3">Is CodeStar suitable for children?<i id="d-arrow3"
+            class='bx bxs-chevron-down'></i></h3>
+        <p style="display: none;" id="hide">Yes. Codecademy is suitable for children who can read and type. Coding is
+          just like learning a new language or studying math. Children who learn to code when they’re young can set
+          themselves up for a lifetime of opportunities for success.</p>
+      </article>
+    </div>
   </section>
 
 
   <h5 style="padding: 1vh 0 3vh 0; text-align: center;">Upgrades</h5>
   <section class="question">
     <div>
-      <article  class="box" id="stick4" style="cursor: pointer;">
-        <h3 class="active" id="click4">Why should I upgrade from Basic <i id="d-arrow4" class='bx bxs-chevron-down' ></i></h3>
-        <p style="display: none;" id="hide">We built Codecademy Pro Lite and Pro based on the lessons we’ve learned from teaching over 45 million people to code since 2011. If you’re ready to accelerate your learning and apply your skills to real-world scenarios, either the Codecademy Pro Lite or Pro membership is for you.</p>
+      <article class="box" id="stick4" style="cursor: pointer;">
+        <h3 class="active" id="click4">Why should I upgrade from Basic <i id="d-arrow4" class='bx bxs-chevron-down'></i>
+        </h3>
+        <p style="display: none;" id="hide">We built Codecademy Pro Lite and Pro based on the lessons we’ve learned from
+          teaching over 45 million people to code since 2011. If you’re ready to accelerate your learning and apply your
+          skills to real-world scenarios, either the Codecademy Pro Lite or Pro membership is for you.</p>
       </article>
 
-      <article  class="box" id="stick5" style="cursor: pointer;">
-        <h3 class="active" id="click5">How do I upgrade from Pro to Premium? <i id="d-arrow5" class='bx bxs-chevron-down' ></i></h3>
-        <p style="display: none;" id="hide">If you’re a current Pro Lite member and want to update to Pro, you can upgrade in the payment and plan section of your account settings.</p>
+      <article class="box" id="stick5" style="cursor: pointer;">
+        <h3 class="active" id="click5">How do I upgrade from Pro to Premium? <i id="d-arrow5"
+            class='bx bxs-chevron-down'></i></h3>
+        <p style="display: none;" id="hide">If you’re a current Pro Lite member and want to update to Pro, you can
+          upgrade in the payment and plan section of your account settings.</p>
       </article>
     </div>
   </section>
 
 
   <h5 style="padding: 1vh 0 3vh 0; text-align: center;">Canceling</h5>
-  <section  class="question">
+  <section class="question">
     <div>
-      <article  class="box" id="stick6" style="cursor: pointer;">
-        <h3 class="active" id="click6">How do I cancel my subscription? <i id="d-arrow6" class='bx bxs-chevron-down' ></i></h3>
-        <p style="display: none;" id="hide">You may cancel your subscription at any time in your payment settings. When you cancel, your subscription ends at the end of the current billing cycle.
+      <article class="box" id="stick6" style="cursor: pointer;">
+        <h3 class="active" id="click6">How do I cancel my subscription? <i id="d-arrow6"
+            class='bx bxs-chevron-down'></i></h3>
+        <p style="display: none;" id="hide">You may cancel your subscription at any time in your payment settings. When
+          you cancel, your subscription ends at the end of the current billing cycle.
 
           You can also pause your subscription if you need to take a break.</p>
       </article>
@@ -611,33 +648,50 @@
 
 
 
-  <section class="company"> 
-    
+  <section class="company">
+
     <div class="cont">
       <h2 style="padding: 1vh 0 1vh 0; text-align: center; color:white">Our learners work at</h2>
       <div class="item-grid">
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/1HrAT69Fbu8y4R58PGhhM3/3e4bc2aeaa8627bbed2cd81a0d11a63c/Google.svg" alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/1HrAT69Fbu8y4R58PGhhM3/3e4bc2aeaa8627bbed2cd81a0d11a63c/Google.svg"
+            alt="">
         </div>
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/69UTHohlR4ibBXJOJHSrUe/700e2290a902950118c391d1dd300a57/Apple.svg" alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/69UTHohlR4ibBXJOJHSrUe/700e2290a902950118c391d1dd300a57/Apple.svg"
+            alt="">
         </div>
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/1HFdp85IkCxCFFGEjeGubg/308970ab261ad9e56c7026165ae2f6af/EA.svg" alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/1HFdp85IkCxCFFGEjeGubg/308970ab261ad9e56c7026165ae2f6af/EA.svg"
+            alt="">
         </div>
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/6tl7b1buWNT44tyD01tfLC/ab2573ccacb34a3bafb10ec22122c23a/IBM.svg" alt="">
-        </div><div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/54i4qs5eG1zR9iMzDT1MIt/a79a2aa7c23fd51beae6d83f18d2289a/Amazon.svg" alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/6tl7b1buWNT44tyD01tfLC/ab2573ccacb34a3bafb10ec22122c23a/IBM.svg"
+            alt="">
         </div>
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/79ylc6GQdK11VqJcNmutd1/823c96b2d1017800f410819e181deddb/Spotify.svg " alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/54i4qs5eG1zR9iMzDT1MIt/a79a2aa7c23fd51beae6d83f18d2289a/Amazon.svg"
+            alt="">
         </div>
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/7ldc6ez0Gin4DP8hh9kuiP/6baa0c53715ccf025d5a3f170b39c6d5/Microsoft.svg" alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/79ylc6GQdK11VqJcNmutd1/823c96b2d1017800f410819e181deddb/Spotify.svg "
+            alt="">
         </div>
         <div class="col">
-          <img src="https://images.ctfassets.net/go6kr6r0ykrq/3ST34u7ViLjqZx9cYlc9vD/fe8eae9634c3c9bda5c563dfd45e6526/Youtube.svg" alt="">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/7ldc6ez0Gin4DP8hh9kuiP/6baa0c53715ccf025d5a3f170b39c6d5/Microsoft.svg"
+            alt="">
+        </div>
+        <div class="col">
+          <img
+            src="https://images.ctfassets.net/go6kr6r0ykrq/3ST34u7ViLjqZx9cYlc9vD/fe8eae9634c3c9bda5c563dfd45e6526/Youtube.svg"
+            alt="">
         </div>
       </div>
     </div>
@@ -647,42 +701,48 @@
 
 
 
- 
+
   <section>
 
     <footer>
       <section class="container1">
-        
+
         <div>
-          <h4 class="title">CodeCademy</h4>
-          <ul class="section-1">
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Affiliates</li>
-          </ul>
+          <a href="\aboutUs\index.html">
+            <h4 class="title">CodeStar</h4>
+            <ul class="section-1">
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Affiliates</li>
+            </ul>
+          </a>
         </div>
-  
+
         <div>
-          <h4 class="resources">Resources</h4>
-          <ul class="section-2">
-            <li> Projects</l>
-            <li> Interview Challenges</li>
-            <li> Docs </li>
-            <li> Cheatsheets </li>
-            <li> Articles</li>
-            <li> Videos</li>
-            <li> Blog</li> 
-            <li> Career Center</li>
-          </ul>
+          <a href="https://www.codecademy.com/resources/docs">
+            <h4 class="resources">Resources</h4>
+            <ul class="section-2">
+              <li> Projects</l>
+              <li> Interview Challenges</li>
+              <li> Docs </li>
+              <li> Cheatsheets </li>
+              <li> Articles</li>
+              <li> Videos</li>
+              <li> Blog</li>
+              <li> Career Center</li>
+            </ul>
+          </a>
         </div>
-  
+
         <div>
-          <h4 class="support">Support</h4>
-          <ul>
-            <li>Help Center</li>
-          </ul>
+          <a href="https://help.codecademy.com/hc/en-us">
+            <h4 class="support">Support</h4>
+            <ul>
+              <li>Help Center</li>
+            </ul>
+          </a>
         </div>
-        
+
         <div>
           <h4 class="community">Community</h4>
           <ul>
@@ -693,84 +753,92 @@
             <li>Learner Stories</li>
           </ul>
         </div>
-  
+
         <div>
-          <h4 class="iplans">Individual Plans</h4>
-          <ul>
-            <li>Pro Membership</li>
-            <li>For Students</li>
-          </ul>
+          <a href="\page2Temirlan\price.html">
+            <h4 class="iplans">Individual Plans</h4>
+            <ul>
+              <li>Pro Membership</li>
+              <li>For Students</li>
+            </ul>
+          </a>
         </div>
-  
-        <div >
+
+        <div>
           <h4 class="eplans">Enterprise Plans</h4>
           <ul>
             <li>Bussiness Solutions</li>
           </ul>
-  
+
         </div>
         <div class="download">
-         
+
         </div>
-        
+
       </section>
-      
+
       <hr>
-     
+
       <section class="container2">
         <div class="course-div">
-          <h3 class="course" style="padding-bottom:1rem ;">Course Catalog</h3></div>
-      
-        
+          <h3 class="course" style="padding-bottom:1rem ;">Course Catalog</h3>
+        </div>
+
+
         <div class="lang">
-         
-  
-          <h4>Languages</h4>
-          <ul >
-            <li>HTML&CSS</li>
-            <li>Python</li>
-            <li>JS</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>PHP</li>
-            <li>Kotlin</li>
-            <li>C++</li>
-          </ul>
+
+          <a href="https://www.northeastern.edu/graduate/blog/most-popular-programming-languages/">
+            <h4>Languages</h4>
+            <ul>
+              <li>HTML&CSS</li>
+              <li>Python</li>
+              <li>JS</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>PHP</li>
+              <li>Kotlin</li>
+              <li>C++</li>
+            </ul>
+          </a>
         </div>
-        
+
         <div class="subjects">
-          <h4>Subjects</h4>
-          <ul>
-            <li>Web Dev</li>
-            <li>Data Science</li>
-            <li>Computer Science</li>
-            <li>Web Design</li>
-            <li>Full Catalog</li>
-            <li>Road Map</li>
-            
-          </ul>
-  
+          <a href="https://www.coursera.org/articles/it-career-paths-how-to-get-started">
+            <h4>Subjects</h4>
+            <ul>
+              <li> Web Dev</li>
+              <li>Data Science</li>
+              <li>Computer Science</li>
+              <li>Web Design</li>
+              <li>Full Catalog</li>
+              <li>Road Map</li>
+
+            </ul>
+          </a>
+
           <div class="br">
-          <br><br><br><br><br><br>
-              <hr>
+            <br><br><br><br><br><br>
+            <hr>
           </div>
-  
-  
-          
+
+
+
         </div>
-        
-        
-         
-  
+
+
+
+
       </section>
-      
-    
-    
+
+
+
     </footer>
-    <div style="text-align: center;  background-color:rgb(246,245,250);" >
-      SDU 2022 
+    <div style="text-align: center;  background-color:rgb(246,245,250);">
+      SDU 2022
     </div>
   </section>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
