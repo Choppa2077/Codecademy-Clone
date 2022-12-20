@@ -233,3 +233,95 @@ a {
     display: block;
   }
 }
+
+
+
+
+
+
+
+
+.container {
+  text-align: center;
+  
+    background-color:rgb(246,245,250);
+}
+
+.header-team{
+  padding-top: 30px;
+  color: #444;
+  font-size: 20px;
+  margin: auto;
+  line-height: 50px;
+}
+
+.root {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  
+  justify-content: center;
+}
+
+.teams {
+  margin: 10px;
+  padding: 22px;
+ 
+  cursor: pointer;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.teams img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.name {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.job {
+  font-style: italic;
+  color: #888;
+}
+
+.about {
+  margin: 20px 0;
+  font-weight: lighter;
+  color: #4e4e4e;
+}
+
+.links {
+  margin: 14px;
+}
+
+.links a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  transition: .4s;
+}
+
+.links a:hover {
+  transform: scale(1.5);
+}
+
+.links a i {
+  color: #444;
+}
+
+@media screen and (max-width: 800px) {
+  .root {
+    display: flex;
+  flex-wrap: wrap;
+  }
+  .teams {
+      max-width: 100%;
+  }
+}
