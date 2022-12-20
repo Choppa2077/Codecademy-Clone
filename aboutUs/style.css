@@ -1,24 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-
-.about-codestar{
+.about-codestar {
   padding-top: 6rem;
   text-align: center;
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image:url('https://assets.entrepreneur.com/content/3x2/2000/20160628101609-Coding.jpeg?auto=webp&quality=95&crop=16:9&width=675');
+  background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20160628101609-Coding.jpeg?auto=webp&quality=95&crop=16:9&width=675");
   background-size: cover;
-background-attachment: fixed;
-background-position: center;
-background-color: rgba(0, 0, 0, 0.6);
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.overlay{
-  
+.overlay {
   height: 100%;
   font-size: 1rem;
   color: white;
@@ -27,7 +25,6 @@ background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   flex-direction: column;
   align-items: center;
- 
 }
 *,
 *::before,
@@ -234,20 +231,13 @@ a {
   }
 }
 
-
-
-
-
-
-
-
 .container {
   text-align: center;
-  
-    background-color:rgb(246,245,250);
+
+  background-color: rgb(246, 245, 250);
 }
 
-.header-team{
+.header-team {
   padding-top: 30px;
   color: #444;
   font-size: 20px;
@@ -260,14 +250,14 @@ a {
   margin: auto;
   padding: 30px 0;
   display: flex;
-  
+
   justify-content: center;
 }
 
 .teams {
   margin: 10px;
   padding: 22px;
- 
+
   cursor: pointer;
   transition: 0.4s;
   box-sizing: border-box;
@@ -305,7 +295,7 @@ a {
   display: inline-block;
   height: 30px;
   width: 30px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .links a:hover {
@@ -319,9 +309,43 @@ a {
 @media screen and (max-width: 800px) {
   .root {
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .teams {
-      max-width: 100%;
+    max-width: 100%;
   }
+}
+
+.virtual-map {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.contact-us {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+.contact-info span {
+  display: block;
+}
+.contact-info div {
+  margin: 0.8rem 0;
+  padding: 1rem;
+}
+.contact-info span .fas {
+  font-size: 2rem;
+  padding-bottom: 0.9rem;
+  color: #f7327a;
+}
+.contact-info div span:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.1rem;
 }
