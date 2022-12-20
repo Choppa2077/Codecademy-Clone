@@ -35,9 +35,6 @@ if (isset($_SESSION["user_id"])){
                     <nav class="header-menu">
                         <ul class="header-list">
                             <li>
-                                <a href="" class="header-link">Catalog</a>
-                            </li>
-                            <li>
                                 <a href="" class="header-link">Resources</a>
                             </li>
                             <li>
@@ -47,13 +44,11 @@ if (isset($_SESSION["user_id"])){
                                 <a href="" class="header-link">Pricing</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Business Solution</a>
+                                <a href="logout.php" class="header-link">Log out</a>
                             </li>
                             <div class="log-sign">
                                 <li>
-                                    <a href="login.php">
-                                        <button class="log-li header-link"><?= htmlspecialchars($user["name"]) ?> </button>
-                                    </a>
+                                    <button class="log-li header-link"><?= htmlspecialchars($user["name"]) ?> </button>
                                 </li>
                             </div>
                         
@@ -137,7 +132,9 @@ if (isset($_SESSION["user_id"])){
                         </li>
                         <div class="log-sign">
                             <li>
-                                <button class="log-li header-link">Log In</button>
+                                <a href="login.php">
+                                    <button class="log-li header-link">Log In</button>
+                                </a>
                             </li>
                             <li class="sign-up-header">
                                 <button class="header-link">Sign Up</button>
@@ -165,17 +162,21 @@ if (isset($_SESSION["user_id"])){
                         <div>
                             <h1>Join the millions learning to code with Codecademy for free</h1>
                         </div>
-                        <form action="">
-                            <p>Email</p>
-                            <br>
-                            <input type="text">
-                            <br>
-                            <p>Password</p>
-                            <br>
-                            <input type="text">
-                            <br>
-                            <button>Sign up</button>
-                        </form>
+                        <form action="process-signup.php" method="post" novalidate>
+                                Name
+                                <br>
+                                <input type="text" id="name" name="name">
+                                <br>
+                                Email
+                                <br>
+                                <input type="email" id="email" name="email">
+                                <br>
+                                Password
+                                <br>
+                                <input type="password" id="password" name="password">
+                                <br>
+                                <button>Sign up</button>
+                            </form>
                         <p class="privacy-policy">
                             By signing up for Codecademy, you agree to Codecademy's Terms of Service & Privacy Policy.
                         </p>
