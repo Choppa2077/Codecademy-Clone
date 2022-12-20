@@ -249,14 +249,14 @@ if (isset($_SESSION["user_id"])){
                 </div>
                 <nav class="header-menu">
                     <ul class="header-list">
-                          <li>
-                                <a href="" class="header-link">Catalog</a>
+                            <li>
+                                <a href="\page1Temirlan\index.html" class="header-link">Catalog</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Discussion</a>
+                                <a href="\pageMagzhan1\index.html" class="header-link">Discussion</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Community</a>
+                                <a href="\pageMagzhan2\index2.html" class="header-link">Community</a>
                             </li>
                             <li>
                                 <a href="\page2Temirlan\price.html" class="header-link">Pricing</a>
