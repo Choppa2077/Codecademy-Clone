@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="script.js"></script>
+
   <title>Document</title>
 </head>
 
@@ -112,9 +112,30 @@
         <div class="modal-body">
 
 
+          <form id="form" action="/">
+            <h1>Payment Form</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cn">Card Number</label>
+                <input id="cn" name="cn" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cvv">CVV</label>
+                <input id="cvv"name="cvv" type="password">
+                <div class="error"></div>
+            </div>
+            
+            <button type="submit">Pay Now</button>
+        </form>
+          
 
 
-          <form action="#" method="post" class="frompay" name="payform" onsubmit="v()">
+          <!-- <form action="#" method="post" class="frompay" name="payform" onsubmit="v()">
 
             <legend>
               <h1>Payment form</h1>
@@ -138,7 +159,7 @@
             <input name="payed" type="submit" value="Pay Now">
 
 
-          </form>
+          </form> -->
 
           <br>
           <h5>OR</h5><br>
@@ -547,45 +568,6 @@
 
 
 
-  <!-- 
-  <section class="upgrade">
-    <div>
-      <div>
-        <h3>Futures</h3>
-        <p>Learning resources</p>
-        <p>Certificates of completion</p>
-        <p>Technical interview prep
-        </p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3>Basic</h3>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-checkbox-minus bx-tada bx-rotate-180' ></i></p>
-        <p><i class='bx bxs-checkbox-minus bx-tada bx-rotate-180' ></i></p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3>Pro</h3>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-checkbox-minus bx-tada bx-rotate-180' ></i></p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3>Premium</h3>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-        <p><i class='bx bxs-check-shield bx-tada' ></i></p>
-      </div>
-    </div>
-    
-  </section> -->
-
-
 
   <div class="fq">
     <h2>Frequently asked questions</h2>
@@ -855,7 +837,8 @@
       SDU 2022
     </div>
   </section>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
