@@ -28,7 +28,8 @@ if (isset($_SESSION["user_id"])){
             <div class="container">
                 <div class="header-body">
                     <a href="" class="header-logo">
-                        <img src="mainPagePhotos/codecademy-logo-vector.png" alt="">
+                        <img src="mainPagePhotos/CodeStar
+                        -logo-vector.png" alt="">
                     </a>
                     <div class="header-burger">
                         <span></span>
@@ -36,13 +37,13 @@ if (isset($_SESSION["user_id"])){
                     <nav class="header-menu">
                         <ul class="header-list">
                              <li>
-                                <a href="" class="header-link">Catalog</a>
+                                <a href="\page1Temirlan\index.html" class="header-link">Catalog</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Discussion</a>
+                                <a href="\pageMagzhan2\index.html" class="header-link">Discussion</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Community</a>
+                                <a href="\pageMagzhan2\index2.html" class="header-link">Community</a>
                             </li>
                             <li>
                                 <a href="\page2Temirlan\price.html" class="header-link">Pricing</a>
@@ -127,7 +128,9 @@ if (isset($_SESSION["user_id"])){
           <section class="container1Foot">
             
             <div>
-              <h4 class="title">CodeCademy</h4>
+              <h4 class="title">CodeStar
+
+              </h4>
               <ul class="section-1">
                 <li>About Us</li>
                 <li>Careers</li>
@@ -238,7 +241,8 @@ if (isset($_SESSION["user_id"])){
         <div class="container">
             <div class="header-body">
                 <a href="" class="header-logo">
-                    <img src="mainPagePhotos/codecademy-logo-vector.png" alt="">
+                    <img src="mainPagePhotos/CodeStar
+                    -logo-vector.png" alt="">
                 </a>
                 <div class="header-burger">
                     <span></span>
@@ -287,7 +291,8 @@ if (isset($_SESSION["user_id"])){
                 <div class="mainRightSide">
                     <div class="insideRightSide">
                         <div>
-                            <h1>Join the millions learning to code with Codecademy for free</h1>
+                            <h1>Join the millions learning to code with CodeStar
+                                 for free</h1>
                         </div>
                         <form action="process-signup.php" method="post" novalidate>
                                 Name
@@ -305,7 +310,9 @@ if (isset($_SESSION["user_id"])){
                                 <button>Sign up</button>
                             </form>
                         <p class="privacy-policy">
-                            By signing up for Codecademy, you agree to Codecademy's Terms of Service & Privacy Policy.
+                            By signing up for CodeStar
+                            , you agree to CodeStar
+                            's Terms of Service & Privacy Policy.
                         </p>
                     </div>
                 </div>
@@ -314,7 +321,8 @@ if (isset($_SESSION["user_id"])){
                 <div class="container">
                     <div class="insideRightSide">
                         <div>
-                            <h1>Join the millions learning to code with Codecademy for free</h1>
+                            <h1>Join the millions learning to code with CodeStar
+                                 for free</h1>
                         </div>
                         <form action="">
                             Email
@@ -328,7 +336,9 @@ if (isset($_SESSION["user_id"])){
                             <button>Sign up</button>
                         </form>
                         <p class="privacy-policy">
-                            By signing up for Codecademy, you agree to Codecademy's Terms of Service & Privacy Policy.
+                            By signing up for CodeStar
+                            , you agree to CodeStar
+                            's Terms of Service & Privacy Policy.
                         </p>
                     </div>
                 </div>
@@ -424,7 +434,8 @@ if (isset($_SESSION["user_id"])){
         <div class="container">
             <div class="content4Text">
                 <h1>Stories from real people</h1>
-                <p>Watch and read stories from the Codecademy community.</p>
+                <p>Watch and read stories from the CodeStar
+                     community.</p>
             </div>
             <div class="peopleFLex">
                 <div class="peopleGrid">
@@ -532,7 +543,9 @@ if (isset($_SESSION["user_id"])){
           <section class="container1Foot">
             
             <div>
-              <h4 class="title">CodeCademy</h4>
+              <h4 class="title">CodeStar
+
+              </h4>
               <ul class="section-1">
                 <li>About Us</li>
                 <li>Careers</li>
