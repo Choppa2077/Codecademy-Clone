@@ -15,7 +15,7 @@
 }
 
 .overlay {
-  width: 70%;
+  
   height: 100%;
   font-size: 2rem;
   color: white;
@@ -63,7 +63,7 @@
 }
 
 .teams:hover {
-  background: #ddd;
+  
   border-radius: 12px;
 }
 
