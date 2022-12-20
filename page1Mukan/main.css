@@ -763,3 +763,53 @@ input {
     padding-bottom: 20px;
   }
 }
+
+
+.home{
+  padding-bottom: 20px;
+}
+.ifHome{
+  padding-top: 100px;
+}
+.contentEnroll{
+  margin-top: 300px;
+}
+
+.contentEnroll h1,
+.contentWorkspace h1{
+  margin-bottom: 25px;
+}
+
+svg{
+  width: 100px;
+}
+.mainLeftSideHome h4,
+.mainLeftSideHome p{
+  margin-bottom: 10px;
+}
+
+.contentEnroll button,
+.contentWorkspace button{
+  background-color: rgb(58, 16, 229);
+  color: white;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.contentWorkspace{
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.mainLeftSideHome{
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.twoSidesIF{
+  display: flex;
+}
