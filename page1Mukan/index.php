@@ -35,17 +35,17 @@ if (isset($_SESSION["user_id"])){
                     </div>
                     <nav class="header-menu">
                         <ul class="header-list">
+                             <li>
+                                <a href="" class="header-link">Catalog</a>
+                            </li>
                             <li>
-                                <a href="" class="header-link">Resources</a>
+                                <a href="" class="header-link">Discussion</a>
                             </li>
                             <li>
                                 <a href="" class="header-link">Community</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="" class="header-link">Business Solution</a>
+                                <a href="\page2Temirlan\price.html" class="header-link">Pricing</a>
                             </li>
                             <li>
                                 <a href="logout.php" class="header-link">Log out</a>
@@ -245,21 +245,18 @@ if (isset($_SESSION["user_id"])){
                 </div>
                 <nav class="header-menu">
                     <ul class="header-list">
-                        <li>
-                            <a href="" class="header-link">Catalog</a>
-                        </li>
-                        <li>
-                            <a href="" class="header-link">Resources</a>
-                        </li>
-                        <li>
-                            <a href="" class="header-link">Community</a>
-                        </li>
-                        <li>
-                            <a href="" class="header-link">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="" class="header-link">Business Solution</a>
-                        </li>
+                          <li>
+                                <a href="" class="header-link">Catalog</a>
+                            </li>
+                            <li>
+                                <a href="" class="header-link">Discussion</a>
+                            </li>
+                            <li>
+                                <a href="" class="header-link">Community</a>
+                            </li>
+                            <li>
+                                <a href="\page2Temirlan\price.html" class="header-link">Pricing</a>
+                            </li>
                         <div class="log-sign">
                             <li>
                                 <a href="login.php">
