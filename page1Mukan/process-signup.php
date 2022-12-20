@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
 <?php
 if(empty($_POST["name"])){
     die("Name is required");
@@ -25,7 +16,7 @@ if( ! preg_match("/[0-9]/", $_POST["password"] )){
 }
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-require( __DIR__ . "/database.php");
+require __DIR__ . "/database.php";
 $sql = "INSERT INTO user (name, email, password_hash)
         VALUES (?, ?, ?)";
 $stmt =  $mysqli ->stmt_init();
@@ -47,6 +38,4 @@ if($stmt->execute()){
     }else{
         die($mysqli->error . " " . $mysqli->errno);
     }
-} ?>
-</body>
-</html>
+}
